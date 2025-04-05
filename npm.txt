@@ -1,0 +1,5 @@
+npm i connect-flash cookie-parser dotenv ejs express express-ejs-layouts express-fileupload express-session mongodb mongoose
+
+npm i nodemon --save-dev
+
+npm i bootstrap-icons [found 1 high severity vulnerability]
