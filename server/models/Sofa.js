@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const recipeSchema = new mongoose.Schema({
+const sofaSchema = new mongoose.Schema({
     name: {
         type: String,
         required: 'This fild is required.'
@@ -9,7 +9,7 @@ const recipeSchema = new mongoose.Schema({
         type: String,
         required: 'This fild is required.'
     },
-    media: {
+    cor: {
         type: String,
         required: 'This fild is required.'
     },
@@ -29,7 +29,7 @@ const recipeSchema = new mongoose.Schema({
 }); 
 
 // WildCard Indexing
-//recipeSchema.index({ "$**" : 'text' });
-recipeSchema.index({ name: 'text', description: 'text' });
+//sofaSchema.index({ "$**" : 'text' });
+sofaSchema.index({ name: 'text', description: 'text' });
 
-module.exports = mongoose.model('Recipe', recipeSchema);
+module.exports = mongoose.model('Sofa', sofaSchema);
